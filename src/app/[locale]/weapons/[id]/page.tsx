@@ -5,9 +5,8 @@ import { join } from "path";
 import { weapons } from "@/data/weapons";
 import { notFound } from "next/navigation";
 
-type tParams = Promise<{ id: string }>;
 
-export default async function WeaponConfigPage( params : tParams) {
+export default async function WeaponConfigPage({params}: {params: Promise<{ id: string }>}) {
     const { id } = await params;
     const weapon = weapons.find(w => w.id === id);
     if (!weapon) notFound();
