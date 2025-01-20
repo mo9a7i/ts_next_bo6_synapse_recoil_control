@@ -4,7 +4,12 @@ import { parseXML } from "@/lib/xml";
 import { join } from "path";
 import { weapons } from "@/data/weapons";
 import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
+
+export function generateStaticParams() {
+    return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function WeaponConfigPage({params}: {params: Promise<{ id: string }>}) {
     const { id } = await params;
