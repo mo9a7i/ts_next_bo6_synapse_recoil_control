@@ -8,7 +8,7 @@ import { routing } from "@/i18n/routing";
 
 
 export function generateStaticParams() {
-    return routing.locales.map((locale) => ({ locale }));
+    return routing.locales.map((id) => ({ id }));
 }
 
 export default async function WeaponConfigPage({params}: {params: Promise<{ id: string }>}) {
