@@ -20,9 +20,9 @@ export function generateStaticParams() {
 export default async function WeaponConfigPage({
     params
 }: {
-    params: { id: string; locale: string }
+    params: Promise<{ id: string; locale: string }>
 }) {
-    const { id } = params;
+    const { id } = await params;
     const weapon = weapons.find(w => w.id === id);
     if (!weapon) notFound();
 
