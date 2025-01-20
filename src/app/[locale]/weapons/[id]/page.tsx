@@ -5,13 +5,8 @@ import { join } from "path";
 import { weapons } from "@/data/weapons";
 import { notFound } from "next/navigation";
 
-interface Props {
-    params: {
-        id: string
-    }
-}
 
-export default async function WeaponConfigPage({ params }: Props) {
+export default async function WeaponConfigPage({ params }: { params: { id: string } }): Promise<React.ReactNode> {
     const { id } = await params;
     const weapon = weapons.find(w => w.id === id);
     if (!weapon) notFound();
