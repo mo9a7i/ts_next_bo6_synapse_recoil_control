@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_URL || '',
+  basePath: process.env.NODE_ENV === 'production' ? '/ts_next_bo6_synapse_recoil_control' : '',
   /* config options here */
 };
 
