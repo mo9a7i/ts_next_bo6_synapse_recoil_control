@@ -6,6 +6,8 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { TwitterIcon, GithubIcon } from 'lucide-react'
 
+export const dynamic = 'force-static'
+
 export default function Home() {
   const t = useTranslations()
 

@@ -6,13 +6,23 @@ import { weapons } from "@/data/weapons";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
+export const dynamic = 'force-static'
 
 export function generateStaticParams() {
-    return routing.locales.map((id) => ({ id }));
+    return routing.locales.flatMap(locale => 
+        weapons.map(weapon => ({
+            locale,
+            id: weapon.id
+        }))
+    );
 }
 
-export default async function WeaponConfigPage({params}: {params: Promise<{ id: string }>}) {
-    const { id } = await params;
+export default async function WeaponConfigPage({
+    params
+}: {
+    params: { id: string; locale: string }
+}) {
+    const { id } = params;
     const weapon = weapons.find(w => w.id === id);
     if (!weapon) notFound();
 
