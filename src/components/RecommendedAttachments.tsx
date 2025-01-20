@@ -19,7 +19,7 @@ export function RecommendedAttachments({ weaponId, weaponName }: RecommendedAtta
       <h2 className="text-sm font-medium mb-4">Recommended Attachments for Specific Macro</h2>
       <div className="relative aspect-video w-full bg-black rounded-lg overflow-hidden">
         <Image
-          src={`/assets/images/weapons/recommended_attachments/${imageName}.png`}
+          src={`/src/assets/images/weapons/recommended_attachments/${imageName}.png`}
           alt={`${weaponName} recommended attachments`}
           fill
           className="object-contain p-2"

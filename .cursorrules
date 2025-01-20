@@ -1,12 +1,14 @@
 # Project Specifications
 
 ## Overview
+
 - Next.js 15 application for Razer Synapse 4 macro configuration
 - Target: Call of Duty Black Ops 6 weapon recoil control
 - Support for universal and weapon-specific macros
 - Sensitivity range: 0.01 - 99.0 (Default: 4.0)
 
 ## Technical Requirements
+
 - Next.js 15 with React 19
 - TypeScript for all configuration files
 - next-intl for i18n (English/Arabic)
@@ -17,12 +19,14 @@
 ## UX/UI Guidelines
 
 ### Layout
+
 - Clean, minimalist interface
 - Responsive design (mobile-first approach)
 - Consistent padding/spacing using Tailwind classes
 - Maximum width container for better readability
 
 ### Navigation
+
 - Weapon grid on homepage with:
   - Weapon image
   - Weapon name
@@ -30,6 +34,7 @@
 - Breadcrumb navigation for easy backtracking
 
 ### Weapon Configuration Page
+
 - Large weapon preview image
 - Sensitivity slider with:
   - Numeric input for precise values
@@ -43,6 +48,7 @@
 - Download button with clear CTA
 
 ### Accessibility
+
 - ARIA labels for all interactive elements
 - Keyboard navigation support
 - Sufficient color contrast ratios
@@ -50,17 +56,20 @@
 - RTL layout support for Arabic
 
 ### State Management
+
 - Preserve user preferences in localStorage
 - Remember last selected weapon
 - Save custom sensitivity presets
 
 ### Performance
+
 - Static page generation where possible
 - Lazy loading for weapon images
 - Optimized asset delivery
 - Minimal client-side JavaScript
 
 ## Development Guidelines
+
 - Use pnpm for package management
 - Implement proper TypeScript types
 - Follow Next.js 13+ server/client component patterns
@@ -69,6 +78,7 @@
 - Include unit tests for macro calculations
 
 ## Internationalization
+
 - Support for English (default) and Arabic
 - Language toggle in header
 - Localized weapon names and descriptions
@@ -76,12 +86,13 @@
 - Maintain consistent date/number formatting
 
 ## Theme
+
 - Dark/Light mode toggle button in header
 - System preference detection
 - Smooth theme transitions
 - Consistent color palette across modes
 
-# Specific Project Instructions
+# Specific Project
 
 You are a senior NextJs 15, React 19, Shadcn developer with 15 years of experience in developing optimized static sites using NextJs.
 

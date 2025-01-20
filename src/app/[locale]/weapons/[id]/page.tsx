@@ -5,6 +5,7 @@ import { join } from "path";
 import { weapons } from "@/data/weapons";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { setRequestLocale } from "next-intl/server";
 
 export const dynamic = 'force-static'
 
@@ -22,8 +23,11 @@ export default async function WeaponConfigPage({
 }: {
     params: Promise<{ id: string; locale: string }>
 }) {
-    const { id } = await params;
+    const { id, locale } = await params;
+    setRequestLocale(locale);
+
     const weapon = weapons.find(w => w.id === id);
+    
     if (!weapon) notFound();
 
     // Load universal macro

@@ -5,11 +5,16 @@ import { Badge } from '@/components/ui/badge'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/routing'
 import { TwitterIcon, GithubIcon } from 'lucide-react'
+import { setRequestLocale } from 'next-intl/server'
 
-export const dynamic = 'force-static'
 
-export default function Home() {
+export default async function Home({params}: {params: {locale: string}}) {
+  const { locale } = await params;
+  // Enable static rendering
+  setRequestLocale(locale);
+
   const t = useTranslations()
+   
 
   return (
     <div className="container mx-auto p-4">

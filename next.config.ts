@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: process.env.NODE_ENV === 'production' ? '/ts_next_bo6_synapse_recoil_control' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/ts_next_bo6_synapse_recoil_control' : '',
+  
+
   /* config options here */
 };
 
