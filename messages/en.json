@@ -1,0 +1,62 @@
+{
+  "Weapons": {
+    "title": "Weapon Selection",
+    "universal": "Universal",
+    "specific": "Specific"
+  },
+  "Config": {
+    "sensitivity": "Sensitivity",
+    "download": "Download Macro",
+    "preview": "Recoil Pattern",
+    "multiplier": "Multiplication Factor"
+  },
+  "Common": {
+    "title": "Weapon Macro Configuration",
+    "universal": "Universal",
+    "specific": "Specific",
+    "download": "Download Macro",
+    "sensitivity": "Sensitivity",
+    "sensitivityTip": "Enter your in-game mouse sensitivity (0.01-99.0). The macro was created with sensitivity 4.0, and will be adjusted accordingly.",
+    "multiplicationFactor": "Multiplication Factor",
+    "sampleMovements": "Sample Movements",
+    "sampleMovementsTip": "Preview of the adjusted mouse movements. Shows how the original coordinates are scaled based on your sensitivity.",
+    "recoilPattern": "Recoil Pattern",
+    "recoilPatternTip": "Visual representation of the recoil pattern. The green dot indicates the starting point, and the blue line shows the movement path.",
+    "lightMode": "Switch to light mode",
+    "darkMode": "Switch to dark mode"
+  },
+  "About": {
+    "title": "About the Macros",
+    "description": "Each weapon has two types of macros available:",
+    "universal": {
+      "title": "Universal Macro",
+      "bullet1": "Created with average recoil patterns",
+      "bullet2": "Works well with most attachment combinations",
+      "bullet3": "Recommended for general use"
+    },
+    "specific": {
+      "title": "Specific Macro",
+      "bullet1": "Optimized for specific attachment configurations",
+      "bullet2": "Provides better recoil control with recommended attachments",
+      "bullet3": "Check weapon page for recommended setup"
+    }
+  },
+  "Settings": {
+    "title": "Default Settings",
+    "mouseSensitivity": "Mouse Sensitivity: 4.00",
+    "adsSensitivity": "ADS Sensitivity: 1.00",
+    "adsFov": "ADS Field of View: Affected"
+  },
+  "Important": {
+    "title": "Important Information",
+    "defaultSettings": "Default in-game settings: Mouse Sensitivity: 4.00, ADS Sensitivity: 1.00",
+    "adsFov": "ADS Field of View should be set to \"Affected\"",
+    "mouseDpi": "Mouse DPI doesn't affect the recoil pattern",
+    "aimHigh": "If aim goes too high: Increase sensitivity",
+    "aimLow": "If aim goes too low: Decrease sensitivity"
+  },
+  "Footer": {
+    "copyright": "© 2024 Weapon Macro Configuration",
+    "disclaimer": "All weapon images and names are property of their respective owners."
+  }
+} 

@@ -1,0 +1,106 @@
+# Project Specifications
+
+## Overview
+- Next.js 15 application for Razer Synapse 4 macro configuration
+- Target: Call of Duty Black Ops 6 weapon recoil control
+- Support for universal and weapon-specific macros
+- Sensitivity range: 0.01 - 99.0 (Default: 4.0)
+
+## Technical Requirements
+- Next.js 15 with React 19
+- TypeScript for all configuration files
+- next-intl for i18n (English/Arabic)
+- Shadcn UI components
+- Dark/Light mode support
+- GitHub workflows in project directory
+
+## UX/UI Guidelines
+
+### Layout
+- Clean, minimalist interface
+- Responsive design (mobile-first approach)
+- Consistent padding/spacing using Tailwind classes
+- Maximum width container for better readability
+
+### Navigation
+- Weapon grid on homepage with:
+  - Weapon image
+  - Weapon name
+  - Universal/Specific macro indicators
+- Breadcrumb navigation for easy backtracking
+
+### Weapon Configuration Page
+- Large weapon preview image
+- Sensitivity slider with:
+  - Numeric input for precise values
+  - Reset to default (4.0) button
+  - Visual feedback on value changes
+- Live preview of macro adjustments
+- Code snippet panel showing:
+  - Current multiplication factor
+  - X/Y mouse movement values
+  - Syntax-highlighted XML preview
+- Download button with clear CTA
+
+### Accessibility
+- ARIA labels for all interactive elements
+- Keyboard navigation support
+- Sufficient color contrast ratios
+- Loading states and error handling
+- RTL layout support for Arabic
+
+### State Management
+- Preserve user preferences in localStorage
+- Remember last selected weapon
+- Save custom sensitivity presets
+
+### Performance
+- Static page generation where possible
+- Lazy loading for weapon images
+- Optimized asset delivery
+- Minimal client-side JavaScript
+
+## Development Guidelines
+- Use pnpm for package management
+- Implement proper TypeScript types
+- Follow Next.js 13+ server/client component patterns
+- Maintain consistent code formatting
+- Document all configuration options
+- Include unit tests for macro calculations
+
+## Internationalization
+- Support for English (default) and Arabic
+- Language toggle in header
+- Localized weapon names and descriptions
+- RTL layout support for Arabic
+- Maintain consistent date/number formatting
+
+## Theme
+- Dark/Light mode toggle button in header
+- System preference detection
+- Smooth theme transitions
+- Consistent color palette across modes
+
+# Specific Project Instructions
+
+You are a senior NextJs 15, React 19, Shadcn developer with 15 years of experience in developing optimized static sites using NextJs.
+
+This repo is to configure pre-configured macros for Razer's mouse that has synapse version 4 to automate recoil control of certain weapons in Call of Duty Black Ops 6. Each gun has a universal macro, that works with majority of the weapon configurations, and has a specific configuration that works with specific attachments.
+
+Ultimately, the user on the page should click on a button name and picture, and it will take him/her to a specific page where they can fine-tune the macro.
+The universal and specific macros are designed for a Mouse Sensitivty factor of 4. in call of duty, the mouse sensitivity can go between 0.01 and 99.0
+
+The user should use a slider input field to adjust his sensitivity and this will adjust the mouse movements in the xml file. He/she can then click download to download the adjusted macro file.
+
+the app uses src folder.
+
+The page should support dark-mode, light-mode. and should use next-intl package for English/Arabic support.
+
+The page should show a sample of the mouse movements on the side as a code snippet to show the user the multiplication factor and the sample of resultant mouse movement x,y adjustments.
+
+Use shadcn for ui components, tell me how to add the components used by providing the command line for pnpx
+use next-intl for i18n with dynamic page routing
+make the page support light mode dark mode using a toggle button, not a menu.
+
+For config files, such as taildiwnd's nextjs ....etc, make sure you use the .ts version, not mjs, not js.
+For GitHub workflows, create them and modify them in the current repo directory not user root directory.
